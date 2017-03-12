@@ -33,6 +33,29 @@ jdbc:
   activitydb:
     tokenstore
 
+# DATABASE
+  datasource:
+      dataSourceClassName: org.postgresql.ds.PGSimpleDataSource
+      url: jdbc:postgresql://mytraits-token-store.cajqukhp151z.us-east-1.rds.amazonaws.com:5432/users
+      databaseName: users
+      serverName: mytraits-token-store.cajqukhp151z.us-east-1.rds.amazonaws.com
+      username: iseq
+      password: iseqsecret
+
+  jpa:
+      database-platform: org.hibernate.dialect.PostgreSQLDialect
+      database: POSTGRESQL
+      openInView: false
+      show_sql: false
+      generate-ddl: false
+      hibernate:
+          ddl-auto: validate
+          naming-strategy: org.hibernate.cfg.EJB3NamingStrategy
+      properties:
+          hibernate.cache.use_second_level_cache: false
+          hibernate.cache.use_query_cache: false
+          hibernate.generate_statistics: false
+
 ---
 
 spring:
