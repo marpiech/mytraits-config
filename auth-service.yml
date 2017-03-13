@@ -37,8 +37,8 @@ jdbc:
 spring:
   datasource:
       dataSourceClassName: org.postgresql.ds.PGSimpleDataSource
-      url: jdbc:postgresql://mytraits-token-store.cajqukhp151z.us-east-1.rds.amazonaws.com:5432/users
-      databaseName: users
+      url: jdbc:postgresql://mytraits-token-store.cajqukhp151z.us-east-1.rds.amazonaws.com:5432/tokenstore
+      databaseName: tokenstore
       serverName: mytraits-token-store.cajqukhp151z.us-east-1.rds.amazonaws.com
       username: iseq
       password: iseqsecret
