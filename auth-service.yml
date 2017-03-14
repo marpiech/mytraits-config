@@ -40,8 +40,6 @@ spring:
       url: jdbc:postgresql://mytraits-token-store.cajqukhp151z.us-east-1.rds.amazonaws.com:5432/tokenstore
       databaseName: tokenstore
       serverName: mytraits-token-store.cajqukhp151z.us-east-1.rds.amazonaws.com
-      username: iseq
-      password: iseqsecret
   jpa:
       database-platform: org.hibernate.dialect.PostgreSQLDialect
       database: POSTGRESQL
